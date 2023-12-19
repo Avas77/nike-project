@@ -2,14 +2,16 @@ import React from "react";
 import Logo from "../Logo";
 import NavLinks from "../NavLinks";
 import SignIn from "../SignIn";
+import Menu from "../Menu";
 
 const Nav = () => {
   return (
-    <header className="padding-x w-full py-8">
+    <header className="padding-x w-full py-8 absolute">
       <nav className="flex justify-between">
         <Logo />
         <NavLinks />
         <SignIn />
+        <Menu />
       </nav>
     </header>
   );

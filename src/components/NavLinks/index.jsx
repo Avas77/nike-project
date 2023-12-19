@@ -2,18 +2,26 @@ import React from "react";
 
 const NavLinks = () => {
   return (
-    <ul className="flex flex-1 justify-center gap-16 items-center">
+    <ul className="flex flex-1 justify-center gap-16 items-center max-lg:hidden">
       <li>
-        <a>Home</a>
+        <a className="text-slate-gray text-lg leading-normal font-montserrat">
+          Home
+        </a>
       </li>
       <li>
-        <a>About Us</a>
+        <a className="text-slate-gray text-lg leading-normal font-montserrat">
+          About Us
+        </a>
       </li>
       <li>
-        <a>Products</a>
+        <a className="text-slate-gray text-lg leading-normal font-montserrat">
+          Products
+        </a>
       </li>
       <li>
-        <a>Contact Us</a>
+        <a className="text-slate-gray text-lg leading-normal font-montserrat">
+          Contact Us
+        </a>
       </li>
     </ul>
   );
