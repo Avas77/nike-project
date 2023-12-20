@@ -1,4 +1,6 @@
 import React from "react";
+import CTAButton from "../CTAButton";
+import BulletTextGroup from "../BulletTextGroup";
 
 const Hero = () => {
   return (
@@ -18,6 +20,8 @@ const Hero = () => {
           Discover stylish Nike arrivals, quality comfort, and innovation for
           your active life.
         </p>
+        <CTAButton label="Shop now" />
+        <BulletTextGroup />
       </div>
       <div className="flex-1">World</div>
     </div>
