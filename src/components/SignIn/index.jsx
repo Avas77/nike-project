@@ -4,7 +4,7 @@ const SignIn = () => {
   return (
     <a
       href="/signin"
-      className="text-lg font-montserrat font-medium leading-normal max-lg:hidden"
+      className="text-lg font-montserrat font-medium leading-normal max-lg:hidden mr-24"
     >
       SignIn / Explore now
     </a>

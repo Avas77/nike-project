@@ -3,7 +3,7 @@ import BulletText from "./BulletText";
 
 const BulletTextGroup = () => {
   return (
-    <div className="flex gap-16 mt-20 w-full">
+    <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
       <BulletText boldText={"1k+"} normalText={"Brands"} />
       <BulletText boldText={"500+"} normalText={"Shops"} />
       <BulletText boldText={"250k+"} normalText={"Customers"} />

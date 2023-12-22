@@ -10,8 +10,11 @@ import {
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex">
-      <div className="flex flex-col justify-center relative xl:w-2/5">
+    <section
+      id="home"
+      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
+    >
+      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28">
         <p className="text-lg font-montserrat text-coral-red">
           Our Summer collections
         </p>
@@ -29,7 +32,7 @@ const Hero = () => {
         <CTAButton label="Shop now" />
         <BulletTextGroup />
       </div>
-      <div className="flex-1 bg-hero flex justify-center items-center relative flex-col">
+      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
         <img
           src={bigShoe1}
           className="object-contain relative z-10"
@@ -48,7 +51,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
