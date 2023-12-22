@@ -10,8 +10,11 @@ import {
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex">
-      <div className="flex flex-col justify-center relative xl:w-2/5">
+    <section
+      id="home"
+      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
+    >
+      <div className="flex flex-col justify-center relative xl:w-2/5 pt-28">
         <p className="text-lg font-montserrat text-coral-red">
           Our Summer collections
         </p>
@@ -48,7 +51,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
