@@ -6,7 +6,7 @@ import Menu from "../Menu";
 
 const Nav = () => {
   return (
-    <header className="padding-x w-full py-8 absolute">
+    <header className="padding-x w-full py-8 absolute z-10">
       <nav className="flex justify-between">
         <Logo />
         <NavLinks />

@@ -1,6 +1,12 @@
 import React from "react";
 import CTAButton from "../CTAButton";
 import BulletTextGroup from "../BulletTextGroup";
+import {
+  bigShoe1,
+  thumbnailShoe1,
+  thumbnailShoe2,
+  thumbnailShoe3,
+} from "../../assets/images";
 
 const Hero = () => {
   return (
@@ -23,7 +29,25 @@ const Hero = () => {
         <CTAButton label="Shop now" />
         <BulletTextGroup />
       </div>
-      <div className="flex-1">World</div>
+      <div className="flex-1 bg-hero flex justify-center items-center relative flex-col">
+        <img
+          src={bigShoe1}
+          className="object-contain relative z-10"
+          width={610}
+          height={502}
+        />
+        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+          <div className="border-2 flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4 border-coral-red">
+            <img src={thumbnailShoe1} alt="shoes" width={127} height={103} />
+          </div>
+          <div className="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
+            <img src={thumbnailShoe2} alt="shoes" width={127} height={103} />
+          </div>
+          <div className="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
+            <img src={thumbnailShoe3} alt="shoes" width={127} height={103} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
