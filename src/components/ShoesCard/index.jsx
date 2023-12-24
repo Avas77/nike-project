@@ -1,5 +1,5 @@
 import React from "react";
-import { shoes } from "../../constants";
+import { shoes } from "../../constants/shoes";
 import { star } from "../../assets/icons";
 
 const ShoesCard = () => {
