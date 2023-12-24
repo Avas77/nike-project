@@ -19,7 +19,7 @@ const HeroSectionLeft = () => {
         Discover stylish Nike arrivals, quality comfort, and innovation for your
         active life.
       </p>
-      <CTAButton label="Shop now" />
+      <CTAButton label="Shop now" showArrow />
       <BulletTextGroup />
     </div>
   );

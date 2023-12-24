@@ -1,12 +1,3 @@
-import React from "react";
-import CTAButton from "../CTAButton";
-import BulletTextGroup from "../BulletTextGroup";
-import {
-  bigShoe1,
-  thumbnailShoe1,
-  thumbnailShoe2,
-  thumbnailShoe3,
-} from "../../assets/images";
 import HeroSectionLeft from "../HeroSectionLeft";
 import HeroSectionRight from "../HeroSectionRight";
 
