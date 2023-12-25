@@ -5,7 +5,7 @@ const CTAButton = ({ label, showArrow = false }) => {
   return (
     <button
       className="w-48 flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none
-      bg-coral-red text-white border-coral-red rounded-full h-12"
+      bg-coral-red text-white border-coral-red rounded-full"
     >
       {label}
       {showArrow && (
