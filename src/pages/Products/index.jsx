@@ -3,6 +3,7 @@ import Nav from "../../components/Nav";
 import FiltersTab from "../../components/FiltersTab";
 import Banner from "../../components/Banner";
 import FilterDrawer from "../../components/FilterDrawer";
+import ProductsGroup from "../../components/ProductsGroup";
 
 const Products = () => {
   return (
@@ -13,6 +14,7 @@ const Products = () => {
         <FiltersTab />
         <div className="flex pl-[4rem]">
           <FilterDrawer />
+          <ProductsGroup />
         </div>
       </div>
     </main>
