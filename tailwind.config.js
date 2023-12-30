@@ -24,6 +24,8 @@ export default {
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)",
+        "banner-grey": "rgb(247, 247, 247)",
+        "border-gray": "rgb(229, 229, 229)",
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",

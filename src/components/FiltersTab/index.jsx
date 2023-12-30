@@ -3,7 +3,7 @@ import { chevronDown, settings } from "../../assets/icons";
 
 const FiltersTab = () => {
   return (
-    <div className="mt-[93px] flex justify-between py-[2rem] px-[4rem]">
+    <div className="flex justify-between py-8 padding-x">
       <h1 className="text-2xl">Men&apos;s Shoes & Sneakers(972)</h1>
       <div className="flex gap-6">
         <button className="flex items-center">
