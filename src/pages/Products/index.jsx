@@ -18,9 +18,7 @@ const Products = () => {
           <ProductsGroup />
         </div>
       </div>
-      <section className=" bg-black padding-x padding-t pb-8">
         <Footer />
-      </section>
     </main>
   );
 };
