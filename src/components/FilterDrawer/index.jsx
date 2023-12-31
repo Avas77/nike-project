@@ -2,7 +2,7 @@ import React from "react";
 
 const FilterDrawer = () => {
   return (
-    <div>
+    <div className="w-[250px]">
       <div className="pb-5 mb-5 border-b border-solid border-b-border-gray">
         <h6 className="text-[16px] font-medium">Pick Up Today</h6>
       </div>

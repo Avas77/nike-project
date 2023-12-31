@@ -4,6 +4,7 @@ import FiltersTab from "../../components/FiltersTab";
 import Banner from "../../components/Banner";
 import FilterDrawer from "../../components/FilterDrawer";
 import ProductsGroup from "../../components/ProductsGroup";
+import Footer from "../../components/Footer";
 
 const Products = () => {
   return (
@@ -17,6 +18,7 @@ const Products = () => {
           <ProductsGroup />
         </div>
       </div>
+        <Footer />
     </main>
   );
 };
