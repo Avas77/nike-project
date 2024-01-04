@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "../../components/Nav";
 import FiltersTab from "../../components/FiltersTab";
 import Banner from "../../components/Banner";
 import FilterDrawer from "../../components/FilterDrawer";
 import ProductsGroup from "../../components/ProductsGroup";
 import Footer from "../../components/Footer";
+import getAllProducts from "../../api";
 
 const Products = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    getAllProducts().then((data) => setProducts(data));
+  }, []);
+  console.log({ products });
   return (
     <main>
       <Nav />
@@ -18,7 +25,7 @@ const Products = () => {
           <ProductsGroup />
         </div>
       </div>
-        <Footer />
+      <Footer />
     </main>
   );
 };
