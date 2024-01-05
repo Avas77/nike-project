@@ -1,9 +1,13 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:3000/api/v1/products";
+const baseURL = "https://nike-practice.onrender.com/api/v1";
+
+const nikeHttp = axios.create({
+  baseURL,
+});
 
 const getAllProducts = async () => {
-  const response = await axios.get(baseURL);
+  const response = await nikeHttp.get("/products");
   return response.data;
 };
 
