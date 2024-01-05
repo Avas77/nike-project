@@ -13,7 +13,7 @@ const Products = () => {
   useEffect(() => {
     getAllProducts().then((data) => setProducts(data));
   }, []);
-  console.log({ products });
+
   return (
     <main>
       <Nav />
@@ -22,7 +22,7 @@ const Products = () => {
         <FiltersTab />
         <div className="flex pl-[4rem]">
           <FilterDrawer />
-          <ProductsGroup />
+          <ProductsGroup products={products} />
         </div>
       </div>
       <Footer />
