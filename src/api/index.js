@@ -11,4 +11,9 @@ const getAllProducts = async () => {
   return response.data;
 };
 
-export default getAllProducts;
+const getSingleProduct = async (id) => {
+  const response = await nikeHttp.get(`/products/${id}`);
+  return response.data;
+};
+
+export { getAllProducts, getSingleProduct };

@@ -8,7 +8,8 @@ const ProductsGroup = ({ products }) => {
       {products?.map((product) => {
         return (
           <ProductsCard
-            key={product.id}
+            key={product._id}
+            id={product._id}
             name={product.name}
             path={product.imgPath}
             category={product.category}
