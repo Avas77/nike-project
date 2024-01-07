@@ -5,7 +5,7 @@ import Banner from "../../components/Banner";
 import FilterDrawer from "../../components/FilterDrawer";
 import ProductsGroup from "../../components/ProductsGroup";
 import Footer from "../../components/Footer";
-import getAllProducts from "../../api";
+import { getAllProducts } from "../../api";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
