@@ -26,6 +26,7 @@ export default {
         "white-400": "rgba(255, 255, 255, 0.80)",
         "banner-grey": "rgb(247, 247, 247)",
         "border-gray": "rgb(229, 229, 229)",
+        "input-border": "#111111",
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
