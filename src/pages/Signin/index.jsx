@@ -1,17 +1,26 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { createUser } from "../../api";
+import { setToken } from "../../utils";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleCreateUser = async () => {
-    const token = await createUser({
-      name,
-      email,
-      password,
-    });
+    try {
+      const token = await createUser({
+        name,
+        email,
+        password,
+      });
+      setToken(token);
+      navigate("/products");
+    } catch (error) {
+      console.log({ error });
+    }
   };
 
   return (
