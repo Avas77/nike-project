@@ -16,4 +16,9 @@ const getSingleProduct = async (id) => {
   return response.data;
 };
 
-export { getAllProducts, getSingleProduct };
+const createUser = async (payload) => {
+  const response = await nikeHttp.post("/user", payload);
+  return response.data;
+};
+
+export { getAllProducts, getSingleProduct, createUser };
