@@ -12,6 +12,7 @@ import truckFast from "./truck-fast.svg";
 import twitter from "./twitter.svg";
 import settings from "./settings.svg";
 import chevronDown from "./chevron-down.svg";
+import profile from "./profile.svg";
 
 export {
   arrowRight,
@@ -28,4 +29,5 @@ export {
   twitter,
   settings,
   chevronDown,
+  profile,
 };
