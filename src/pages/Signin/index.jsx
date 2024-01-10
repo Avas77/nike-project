@@ -55,6 +55,7 @@ const SignIn = () => {
         <input
           placeholder="Password"
           className="p-4 border input-border rounded-lg w-[487px] my-4"
+          type="password"
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>

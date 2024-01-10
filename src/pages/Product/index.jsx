@@ -15,8 +15,6 @@ const Product = () => {
     });
   }, []);
 
-  console.log(product);
-
   return (
     <main>
       <Nav />
