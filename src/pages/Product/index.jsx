@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Nav from "../../components/Nav";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import { bookProducts, getSingleProduct } from "../../api";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { getToken } from "../../utils";
 
 const Product = () => {
@@ -11,6 +11,7 @@ const Product = () => {
   const userSession = getToken();
   const token = userSession?.token;
   const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     getSingleProduct(id).then((response) => {
@@ -19,10 +20,10 @@ const Product = () => {
   }, []);
 
   const handleBooking = () => {
-    console.log("Hello");
     bookProducts(id, {
       email: userSession?.user?.email,
     });
+    navigate("/cart");
   };
 
   return (
