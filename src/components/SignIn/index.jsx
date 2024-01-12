@@ -1,6 +1,7 @@
 import React from "react";
 import { getToken } from "../../utils";
 import { profile } from "../../assets/icons";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   const userSession = getToken();
@@ -15,12 +16,12 @@ const SignIn = () => {
   }
 
   return (
-    <a
-      href="/signin"
+    <Link
+      to="/signin"
       className="text-lg font-montserrat font-medium leading-normal max-lg:hidden mr-24"
     >
       SignIn / Explore now
-    </a>
+    </Link>
   );
 };
 
