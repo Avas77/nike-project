@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Product from "./pages/Product";
 import SignIn from "./pages/Signin";
+import Cart from "./pages/Cart";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/signin",
     element: <SignIn />,
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
   },
 ]);
 
