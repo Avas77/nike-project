@@ -14,7 +14,7 @@ const NavLinks = () => {
       </li>
       <li>
         <Link
-          to="/about-us"
+          to="/"
           className="text-slate-gray text-lg leading-normal font-montserrat"
         >
           About Us
@@ -30,7 +30,7 @@ const NavLinks = () => {
       </li>
       <li>
         <Link
-          to="/contact-us"
+          to="/"
           className="text-slate-gray text-lg leading-normal font-montserrat"
         >
           Contact Us
