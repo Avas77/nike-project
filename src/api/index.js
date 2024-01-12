@@ -21,4 +21,9 @@ const createUser = async (payload) => {
   return response.data;
 };
 
-export { getAllProducts, getSingleProduct, createUser };
+const bookProducts = async (id, payload) => {
+  const response = await nikeHttp.post(`/user/order/${id}`, payload);
+  return response.data;
+};
+
+export { getAllProducts, getSingleProduct, createUser, bookProducts };

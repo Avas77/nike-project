@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import Nav from "../../components/Nav";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
-import { getSingleProduct } from "../../api";
+import { bookProducts, getSingleProduct } from "../../api";
 import { useParams } from "react-router-dom";
+import { getToken } from "../../utils";
 
 const Product = () => {
   const [product, setProduct] = useState({});
+  const userSession = getToken();
+  const token = userSession?.token;
   const { id } = useParams();
 
   useEffect(() => {
@@ -14,6 +17,13 @@ const Product = () => {
       setProduct(response);
     });
   }, []);
+
+  const handleBooking = () => {
+    console.log("Hello");
+    bookProducts(id, {
+      email: userSession?.user?.email,
+    });
+  };
 
   return (
     <main>
@@ -79,7 +89,11 @@ const Product = () => {
                 M 6/ W 7.5
               </div>
             </div>
-            <button className="w-full bg-black text-white px-6 py-5 rounded-full mt-12">
+            <button
+              className="w-full bg-black text-white px-6 py-5 rounded-full mt-12"
+              disabled={token ? false : true}
+              onClick={handleBooking}
+            >
               Add to Bag
             </button>
             <button className="w-full mb-6 bg-white text-black px-6 py-5 rounded-full mt-3 border border-black">
