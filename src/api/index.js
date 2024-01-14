@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://nike-practice.onrender.com/api/v1";
+const baseURL = "https://nike-project-backend.vercel.app/api/v1";
 
 const nikeHttp = axios.create({
   baseURL,

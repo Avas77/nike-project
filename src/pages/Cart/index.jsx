@@ -17,7 +17,6 @@ const Cart = () => {
     });
   }, []);
 
-  console.log({ order });
   return (
     <main>
       <Nav />

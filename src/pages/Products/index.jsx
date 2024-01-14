@@ -9,7 +9,7 @@ import { getAllProducts } from "../../api";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-
+  const isProductsLoaded = products?.length > 0;
   useEffect(() => {
     getAllProducts().then((data) => setProducts(data));
   }, []);
@@ -22,7 +22,11 @@ const Products = () => {
         <FiltersTab />
         <div className="flex pl-[4rem]">
           <FilterDrawer />
-          <ProductsGroup products={products} />
+          {isProductsLoaded ? (
+            <ProductsGroup products={products} />
+          ) : (
+            <div className="text-center w-full">Loading Please wait...</div>
+          )}
         </div>
       </div>
       <Footer />
